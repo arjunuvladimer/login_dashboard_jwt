@@ -1,15 +1,18 @@
 <template>
   <div>
-    <button type="button" class="btn btn-primary">Primary</button>
-
+    <Login />
+    <Register />
   </div>
 </template>
 
 <script>
-
+import Login from './components/Login.vue'
+import Register from './components/Register.vue'
 export default {
   name: 'App',
   components: {
+    Login,
+    Register
   }
 }
 </script>

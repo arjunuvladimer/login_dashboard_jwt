@@ -6,7 +6,6 @@ const user = JSON.parse(localStorage.getItem('user'))
 const initialState = user 
                         ? {status: {loggedIn: true}, user} 
                         : {status: {loggedIn: false}}
-
 export const auth = {
     namespaced: true,
     state: initialState,
@@ -58,7 +57,7 @@ export const auth = {
         registerSuccess(state){
             state.status.loggedIn = false
         },
-        registerSuccess(state){
+        registerFailure(state){
             state.status.loggedIn = false
         },
     }
